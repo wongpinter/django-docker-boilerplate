@@ -22,6 +22,10 @@ $ docker-compose exec web python manage.py migrate --fake-initial
 $ docker-compose exec web python createsuperuser
 ````
 
+## Staging
+
+Staging used before production for make sure letsencrypt works.
+
 ## Production
 ````
 $ docker-compose -f docker-compose.production.yml up -d --build
