@@ -4,6 +4,8 @@ services:
     web:
         build: ./app
         command: python manage.py runserver 0.0.0.0:8000
+        # if u want to use gunicorn
+        # command: gunicorn --bind 0.0.0.0:8000 manage:app
         volumes:
             - ./app/:/usr/src/app/
         ports:
